@@ -1,5 +1,4 @@
 let addon = require('bindings')('hello');
-
 console.time('addon fabonacci')
 addon.fabonacci()
 console.timeEnd('addon fabonacci')

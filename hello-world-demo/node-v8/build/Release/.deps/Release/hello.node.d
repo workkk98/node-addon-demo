@@ -1,1 +1,1 @@
-cmd_Release/hello.node := c++ -bundle -undefined dynamic_lookup -Wl,-search_paths_first -mmacosx-version-min=10.13 -arch x86_64 -L./Release -stdlib=libc++  -o Release/hello.node Release/obj.target/hello/hello.o 
+cmd_Release/hello.node := c++ -bundle -undefined dynamic_lookup -Wl,-no_pie -Wl,-search_paths_first -mmacosx-version-min=10.13 -arch x86_64 -L./Release -stdlib=libc++  -o Release/hello.node Release/obj.target/hello/hello.o Release/obj.target/hello/arguments.o Release/obj.target/hello/callback.o 
